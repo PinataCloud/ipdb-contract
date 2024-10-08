@@ -19,9 +19,13 @@ ETHERSCAN_API_KEY=
 
 The `WALLET_PRIVATE_KEY` would be the private key to your wallet that is deploying the contract; practice basic precautions and use a fresh wallet and start with a testnet first. 
 
-> [INFO]
+> [!NOTE]
 > The `ETHERSCAN_API_KEY` can be used to verify the contract after deployment. If you don’t plan to use it you may want to take out this piece of the `hardhat.config.ts` 
-> Code snippet
+> ```typescript
+> etherscan: {
+>	  apiKey: process.env.ETHERSCAN_API_KEY,
+> },
+> ```
 
 To compile the contracts run the following command
 
